@@ -796,19 +796,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\spfarm\\.nuget\\packages\\": {}
+    "C:\\Users\\kktam\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spfarm\\Documents\\GitHub\\Assignment\\Assignment\\Assignment.Models\\Assignment.Models.csproj",
+      "projectUniqueName": "C:\\Users\\kktam\\Desktop\\Dev\\Assignment-thamer\\Assignment.Models\\Assignment.Models.csproj",
       "projectName": "Assignment.Models",
-      "projectPath": "C:\\Users\\spfarm\\Documents\\GitHub\\Assignment\\Assignment\\Assignment.Models\\Assignment.Models.csproj",
-      "packagesPath": "C:\\Users\\spfarm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spfarm\\Documents\\GitHub\\Assignment\\Assignment\\Assignment.Models\\obj\\",
+      "projectPath": "C:\\Users\\kktam\\Desktop\\Dev\\Assignment-thamer\\Assignment.Models\\Assignment.Models.csproj",
+      "packagesPath": "C:\\Users\\kktam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kktam\\Desktop\\Dev\\Assignment-thamer\\Assignment.Models\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\spfarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kktam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -866,7 +870,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

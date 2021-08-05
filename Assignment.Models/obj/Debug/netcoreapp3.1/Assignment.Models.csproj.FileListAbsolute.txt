@@ -10,3 +10,15 @@ C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Deb
 C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.pdb
 C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.genruntimeconfig.cache
 C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.csprojAssemblyReference.cache
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.deps.json
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.runtimeconfig.json
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.runtimeconfig.dev.json
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.dll
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.pdb
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.csprojAssemblyReference.cache
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.AssemblyInfoInputs.cache
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.AssemblyInfo.cs
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.csproj.CoreCompileInputs.cache
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.dll
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.pdb
+C:\Users\kktam\Desktop\Dev\Assignment-thamer\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.genruntimeconfig.cache
