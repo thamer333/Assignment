@@ -1,0 +1,12 @@
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.deps.json
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.runtimeconfig.json
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.runtimeconfig.dev.json
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.dll
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\bin\Debug\netcoreapp3.1\Assignment.Models.pdb
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.AssemblyInfoInputs.cache
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.AssemblyInfo.cs
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.csproj.CoreCompileInputs.cache
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.dll
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.pdb
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.genruntimeconfig.cache
+C:\Users\spfarm\Documents\GitHub\Assignment\Assignment\Assignment.Models\obj\Debug\netcoreapp3.1\Assignment.Models.csprojAssemblyReference.cache
