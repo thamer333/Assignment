@@ -1,74 +1,110 @@
 import './style.css';
-import { DataGrid } from '@material-ui/data-grid';
-import{ useEffect, useState } from 'react';
-import { Get } from '../../services/api.service';
+import { DataGrid, GridCellParams } from '@material-ui/data-grid';
+import { TextField, Button } from '@material-ui/core';
 
-// TODO replace the columns with your schema
-const columns = [
-  { field: 'id', headerName: 'ID', width: 90 },
-  {
-    field: 'firstName',
-    headerName: 'First name',
-    width: 150,
-    editable: true,
-  },
-  {
-    field: 'lastName',
-    headerName: 'Last name',
-    width: 150,
-    editable: true,
-  },
-  {
-    field: 'age',
-    headerName: 'Age',
-    type: 'number',
-    width: 110,
-    editable: true,
-  },
-  {
-    field: 'fullName',
-    headerName: 'Full name',
-    description: 'This column has a value getter and is not sortable.',
-    sortable: false,
-    width: 160,
-    valueGetter: (params) =>
-      `${params.getValue(params.id, 'firstName') || ''} ${
-        params.getValue(params.id, 'lastName') || ''
-      }`,
-  },
-];
+import { useEffect, useState } from 'react';
+import { Get, DeleteById } from '../../services/api.service';
+import { Switch, Route, Link } from 'react-router-dom';
+import { Details } from '../details/component';
+import { useHistory } from 'react-router-dom';
 
-// TODO remove, dummy data
-const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-];
 
+
+
+
+export const routes = {
+  DETAILS: '/:id',
+};
 export const List = () => {
-  const [data, setData] = useState(rows);
+  const history = useHistory();
+
+  const columns = [
+    {
+      field: 'fullName',
+      headerName: 'Full name',
+      width: 250,
+    },
+    {
+      field: 'gender',
+      headerName: 'Gender',
+      width: 150,
+      valueGetter: getGender,
+    },
+    {
+      field: 'birthdate',
+      headerName: 'Dirthdate',
+      width: 200,
+
+    },
+    {
+      field: 'numberOfKids',
+      headerName: 'Number Of Kids',
+      width: 200,
+    },
+    {
+      field: 'hearAboutUs',
+      headerName: 'How hear about us',
+      width: 250,
+      valueGetter: getHearAboutUs
+    },
+    {
+      field: 'id',
+      headerName: 'Delete',
+      width: 150,
+      renderCell: (params: GridCellParams) => (
+        <strong>
+          <Button
+            variant="contained"
+            color="primary"
+            size="small"
+            style={{ marginLeft: 16 }}
+            onClick={() => { DeleteItem(params.value) }}
+          >
+            Delete
+          </Button>
+        </strong>
+      ),
+    },
+  ];
+
+  function getGender(params) {
+    return params.row.gender == 1 ? 'Male' : 'Female';
+  }
+  function getHearAboutUs(params) {
+    return params.row.hearAboutUs == 1 ? 'Google' : params.row.hearAboutUs == 2 ? 'TV' : params.row.hearAboutUs == 3 ? 'Radio' : 'Social Network';
+  }
+
+  const [rows, setData] = useState([]);
   useEffect(() => {
     Get('/Assignment').then(res => {
-      // TODO uncomment the line below and pass the data array to setData
-      // setData(res);
-    })
- }, []);
+      setData(res);
 
+    })
+
+  }, []);
+  function DeleteItem(id) {
+
+    DeleteById('/Assignment', id).then(res => {
+      window.location.reload();
+    });
+  };
   return (
     <div style={{ height: 400, width: '100%' }}>
-     <DataGrid
+      <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
-        checkboxSelection
-        disableSelectionOnClick
+        pageSize={10}
+
       />
+      <div style={{ paddingTop: 5 }}>
+        <Link to={routes.DETAILS}>Add new item</Link>
+
+        <Switch>
+          <Route exact path={routes.DETAILS} component={Details} />
+        </Switch>
+      </div>
+
     </div>
+
   );
 };
